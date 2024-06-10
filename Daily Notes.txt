@@ -1,0 +1,292 @@
+
+Language:
+=========
+
+	communication with human
+	
+Programming Language:
+====================	
+	
+		communication with machine -->software-->set of programs-->set of instructions
+	
+c,c++,python,java,ruby...........
+	
+
+			POP						OOP
+B,C,BCPL,COBOL,PHOTON......			c++,java,python,.net....
+
+
+		
+Python		--->	1989 -->1991 feb 20th  -->33
+
+
+syntax 
+
+java
+
+Welcome.java
+
+class Welcome
+{
+public static void main(String args[])
+	{
+		System.out.println("Welcome to java ")
+	}
+}
+compile	javac filename.java
+execute	java Welcome
+
+python
+	
+	the complete monty python's circus-->guido van russam
+	
+	3.12.4
+
+1)functional programming features from c language 
+2)object oriented programming features from C++
+3)scrpting language features from shellscript
+4)modular programming from modula-3
+
+		C,ABC
+		
+1)standalone or desktop apps 	ex:notepad++,media players,anti virus apps...		core python,tkinter
+2)web apps						ex:gmail,amazon,flipkart.... server              Django,flask
+3)Db Apps							PDBC
+4)networking apps
+5)gaming apps
+6)DA
+7)AI
+8)ML
+9)IOT
+
+Features Of python:
+====================
+1)simple and easy and learn
+		30+
+		['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue',
+		'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in',
+		'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 
+		'yield
+
+2)freeware and open source 		
+
+				jython-->
+3)platform independent 		WORA			
+				
+4)portable 
+
+5)dynamic typed 		int marks=2313;static typed 		marks=2222 dynamic typed PL
+
+6)interpreted  PVM
+
+7)libraries
+
+
+identifiers
+	identification
+	
+		any name python will call it as identifier 
+
+			var name ,method name,classname,obj name....
+
+		a-z
+		A-Z
+		0-9
+		_
+
+
+
+variables
+		name of memory location
+
+		local variable		inside the block 
+		global variable		outside the block/function 
+
+
+datatypes
+
+		int		1234
+		bool	(True,False)
+		float	decimal 1.234    #
+		str 		''/""/""" """/''' '''(doc string)
+		complex
+		range
+		
+		
+		list
+		set
+		tuple
+		frozenset
+		dict
+		
+		
+		
+			type()
+			id()
+			print()
+			
+			
+			int()
+			float()
+			complex()
+			str()
+			bool()
+		
+		
+		
+	typecasting	
+		
+		input("Enter your name : ")
+		
+
+
+		Immutability:
+		
+Advanced Datatypes:
+
+	one value DT
+	
+	group of objects as a single entity
+	
+	List
+	Set
+	Tuple
+	Dict
+	Frozenset
+
+
+	LIST:
+	=====
+	
+		1)duplicates are allowed 
+		2)insertion order is preserved 
+		3)homogeneous and heterogenous objects are allowed 
+		4)growable in nature 
+		5)[]
+		6)list is muttable 
+
+
+>> names=['suresh','naresh','ramesh','mukesh','hitesh','suresh','rajesh']
+>>> type(names)
+<class 'list'>
+>>> print(names)
+['suresh', 'naresh', 'ramesh', 'mukesh', 'hitesh', 'suresh', 'rajesh']
+>>> names.append('sandeep')
+>>> print(names)
+['suresh', 'naresh', 'ramesh', 'mukesh', 'hitesh', 'suresh', 'rajesh', 'sandeep']
+>>> names.remove('naresh')
+>>> print(names)
+['suresh', 'ramesh', 'mukesh', 'hitesh', 'suresh', 'rajesh', 'sandeep']
+
+
+	Tuple:
+	=====
+	
+		1)duplicates are allowed 
+		2)insertion order is preserved 
+		3)homogeneous and heterogenous objects are allowed 
+		4)growable in nature 
+		5)()
+		6)tuple is imuttable 
+
+
+>>> marks=(121,900,3212,999,819,31,3212)
+>>> type(marks)
+<class 'tuple'>
+>>> print(marks)
+(121, 900, 3212, 999, 819, 31, 3212)
+>>> marks=(121,900,3212,999,819,31,3212,'sandeep')
+>>> print(marks)
+(121, 900, 3212, 999, 819, 31, 3212, 'sandeep')
+>>> for number in marks:print(number)
+...
+121
+900
+3212
+999
+819
+31
+3212
+sandeep
+
+	SET:
+	=====
+	
+		1)duplicates are not allowed 
+		2)insertion order is not preserved 
+		3)homogeneous and heterogenous objects are allowed 
+		4)growable in nature 
+		5){}
+		6)set is muttable 
+
+
+>>> emps={123,'suresh','hyderabad','india','developer','india'}
+>>> type(emps)
+<class 'set'>
+>>> print(emps)
+{'suresh', 'india', 123, 'developer', 'hyderabad'}
+>>> emps.add("delhi")
+>>> print(emps)
+{'suresh', 'delhi', 'india', 123, 'developer', 'hyderabad'}
+>>> emps.remove('india')
+>>> print(emps)
+{'suresh', 'delhi', 123, 'developer', 'hyderabad'}
+
+
+Frozenset:
+===========
+		1)duplicates are not allowed 
+		2)insertion order is not preserved 
+		3)homogeneous and heterogenous objects are allowed 
+		4)not growable in nature 
+		5)frozenset()
+		6)frozenset is imuttable 
+		
+>>> type(emps)
+<class 'set'>
+>>> employees=frozenset(emps)
+>>> employees.add(123)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'add'
+>>> type(employees)
+<class 'frozenset'>
+
+dict:
+======
+	1)duplicate keys are not allowed values can be duplicate
+	2)key ,value can be homogeneous or heterogeneous
+	3)growable in nature
+	4)muttable
+	5){key:value,key1:value1}
+	
+	key,value-->entry
+	key and value  can be any dt
+	
+	key must be unique values can be duplicate
+	
+	{}
+>>> studs={123:'suresh',124:'rajesh',125:'somesh',124:'sandeep'}
+>>> print(studs)
+{123: 'suresh', 124: 'sandeep', 125: 'somesh'}
+>>> studs[222]='qwerty'
+>>> print(studs)
+{123: 'suresh', 124: 'sandeep', 125: 'somesh', 222: 'qwerty'}
+>>> studs.pop(222)
+'qwerty'
+>>> print(studs)
+{123: 'suresh', 124: 'sandeep', 125: 'somesh'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
