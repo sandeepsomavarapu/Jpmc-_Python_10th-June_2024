@@ -351,20 +351,136 @@ lambda
 			
 			return 
 			
+Exception Handling:
+===================
+
+
+the problem with out exception handling:
+
+
+	1)System defined error messages PVM
+	2)abnormal termination
+
+
+	1
+	2------>stop the execution --->    abnormal termination
+	3
+	4
+	5
+	6
+	
+	
+	
+	
+	1000
+
+the advantages with exception handling
+
+	1)user friendly error messages
+	2)normal termination
+
+		BaseException
+
+Exception
+	
+		try				--> error code/risky code 
+				
+		except			--> handling code 
+		
+		finally			--> clean up code 
+		
+		raise			--> to raise an exception explicitly
+		
+		else			-->if no exception is there then else code will execute 
+		
+
+		raise Exception("invalid credentials")
+
+	custom /user defined
+
+
+class InvalidCredentials(Exception):
+
+	def __init__(message):
+		print(message)
+
+
+
+	if(uname & pass):
+		raise InvalidCredentials("Enter valid credentials")
+	
+
+
+create userdefined exception and raise when age is less than 18 saying InvalidAgeException--->not allowed to vote
 			
 			
 			
 			
+			try:
+								invalid
+								
+								
+			except:				invalid					
 			
 			
 			
+			finally				invalid
 			
 			
+			try:
+								valid
+			finally:		
 			
 			
+			try:
+			
+			except				valid
+			
+			except
+			
+			try 
+			
+			finally				invalid
+			
+			except		
 			
 			
+			try:
+			
+			except				valid
+			
+			else
+			
+			finally
+			
+
+			try:
+			
+			except				invalid
+			
+			finally
+			
+			finally
 			
 			
+			try
 			
+			print()				invalid
+			except
+			
+File:
+======			
+			files		
+			database
+			object
+			
+			
+					python-->write/append/read
+					
+			open()
+			read()
+			write()
+			close()
+					
+					
 			
